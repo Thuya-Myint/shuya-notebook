@@ -11,6 +11,7 @@ data class Note(
     val createdAt:Instant= Instant.now(),
     val updatedAt: Instant= Instant.now(),
     val ownerId: ObjectId= ObjectId.get(),
+    val remindTime: Instant= Instant.now(),
     @Id val id : ObjectId = ObjectId.get()
 
 )
